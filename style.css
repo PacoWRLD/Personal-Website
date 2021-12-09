@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #87CEEB;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Quicksand", sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/* 
+	WEBSITE NAVIGATON BAR 
+*/
+
+header {
+    height: 120px;
+    background-color: #ffa500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    width: 250px;
+    height: 120px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+li {
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+li:hover, li.active {
+    color: #FFD600;
+    transform: scale(1.1);
+}
+
+p {
+  color: white;
+}
+  
+/* 
+	HOME PAGE
+*/
+
+#banner {
+    height: 300px;
+    width: 1600px;
+	background-image:url("https://locations.blinkfitness.com/permanent-b0b701/assets/images/directoryhero.7d63ac64.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+#banner h2 {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+#page1 img {
+    width: 30%;
+    margin: 20px;
+}
+
+#page1 h2 {
+  color: white;
+}
+/* 
+	ABOUT PAGE
+*/
+
+#page2 {
+    padding: 20px 30px;
+}
+
+#page2 h2 {
+	text-align: center;
+  color: yellow
+  
+}
+#page2 p{
+  text-align: center;
+  color: white;
+}
+
+/* 
+	SERVICE PAGE
+*/
+
+#page3 h2 {
+	color:navy;    
+    text-align: center;
+}
+
+#page3 h3 {
+    text-align: center;
+}
+
+.row {
+    margin-top: 30px;
+    display: flex;
+    text-align: left;
+}
+
+.row img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+
+
+/* 
+	FOOTER
+*/
+
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding: 100px 0 50px;
+}
+
+main > div {
+    padding: 20px 20px;
+	display: none;
+}
+
+header {
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	z-index: 100;
+}
+
+
+/* For mobile view - do NOT edit the CSS below! */
+@media screen and (max-width: 540px) {
+
+    .row,
+    .inner-row {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #page1 img {
+        width: 200px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .row img {
+        display: block;
+        margin: 20px auto;
+    }
+
+    header {
+        height: 12vh;
+        min-height: 100px;
+    }
+
+    ul {
+        position: relative;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
